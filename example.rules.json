@@ -1,0 +1,17 @@
+[
+	{
+		"items": [
+			{"id":"no-dot-dot-path", "part":"path", "regex":"\\.\\."},
+			{"id":"no-dot-dot-query", "part":"query", "regex":"\\.\\."},
+			{"id":"no-dot-dot-body", "part":"body", "regex":"\\.\\."}
+		],
+		"condition": "OR"
+	},
+	{
+		"items": [
+			{"id":"no-html-tag-query", "part":"query", "regex":"<"},
+			{"id":"no-html-script-tag-body", "part":"body", "regex":"<script"}
+		],
+		"condition": "OR"
+	}
+]
