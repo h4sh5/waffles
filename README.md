@@ -24,7 +24,7 @@ example (if origin URL is at `http://localhost:8080` and you are using the examp
 
 An example JSON rules file is provided in the repo.
 
-Each rule has multiple items that combine using an OR / AND condition. They also 
+Each rule has multiple items that combine using an OR / AND condition. Each rule item can be on the path (e.g. /admin), query (e.g. "id=1") or body (e.g. the body of a POST request), and uses Golang regex.
 
 All rules are processed, and if any rules match the request will be blocked, returning HTTP status 406.
 
